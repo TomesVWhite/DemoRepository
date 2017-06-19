@@ -1,0 +1,14 @@
+#Fat Jar Configuration File
+#Mon Jun 19 11:15:54 CST 2017
+onejar.license.required=true
+manifest.classpath=
+manifest.removesigners=true
+onejar.checkbox=false
+jarname=GetApkInfo_fat.jar
+manifest.mergeall=true
+manifest.mainclass=com.chillax_li.main.MainTest
+manifest.file=<createnew>
+jarname.isextern=false
+onejar.expand=
+excludes=
+includes=
