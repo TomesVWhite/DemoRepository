@@ -3,6 +3,10 @@ package com.tomes.properties;
 import java.util.ArrayList;
 import java.util.List;
 
+/**该类用于获取杨辉三角数
+ * @author Tomes
+ *
+ */
 public class PascalTriangle {
 	public static void main(String[] args) {
 		// List<List<Integer>> m2 = m2(10);
@@ -12,7 +16,7 @@ public class PascalTriangle {
 		
 	}
 
-	/**
+	/**获取指定行数的杨辉三角数。
 	 * @param rowNo
 	 *            杨辉三角行数
 	 * @return 包含杨辉三角的二维数组
