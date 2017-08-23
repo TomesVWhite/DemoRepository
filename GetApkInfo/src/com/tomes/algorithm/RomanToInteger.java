@@ -37,10 +37,6 @@ public class RomanToInteger {
 			//之后的数字比它小的话，则加上当前数字
 			boolean compare=false;
 			for (int j = i+1; j < s.length(); j++) {
-				char s1=s.charAt(i);
-				char s2=s.charAt(j);
-				Integer t1 = romanInteger.get(s.charAt(i));
-				Integer t2 = romanInteger.get(s.charAt(j));
 				if(romanInteger.get(s.charAt(i))<romanInteger.get(s.charAt(j))){
 					compare=true;
 				}
