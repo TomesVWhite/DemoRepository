@@ -38,6 +38,8 @@ public class JavaProxyInstrumentation extends Instrumentation {
 				IBinder.class, Activity.class, Intent.class, int.class,
 				Bundle.class);
 		method.setAccessible(true);
+		//可以改变他本身的意图，本来跳转到页面2的，重新给他的intent赋值，能让他跳转到页面3。
+		intent.setClassName(who.getPackageName(), "com.tomes.javaproxyhook.ThirdActivity");
 		return (ActivityResult) method.invoke(mbase, who, contextThread, token, target, intent,
 				requestCode, options);
 
