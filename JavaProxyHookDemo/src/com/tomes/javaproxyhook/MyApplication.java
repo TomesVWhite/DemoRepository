@@ -10,6 +10,7 @@ public class MyApplication extends Application{
 		try {
 			 // 在这里进行Hook
 			HookHelper.attachContext();
+			HookAM.hook();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
