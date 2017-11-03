@@ -11,6 +11,7 @@ public class MyApplication extends Application{
 			 // 在这里进行Hook
 			HookHelper.attachContext();
 			HookAM.hook();
+			HookPM.hook(this);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

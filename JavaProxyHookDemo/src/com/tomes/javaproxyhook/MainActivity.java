@@ -12,6 +12,8 @@ public class MainActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
+		//这里通过调用getInstalledApplications 测试pms hook成功没。
+		getPackageManager().getInstalledApplications(TRIM_MEMORY_BACKGROUND);
 	}
 
 	public void to2(View v){
