@@ -1,13 +1,15 @@
-package com.tomes.javaproxyhook;
+package com.tomes.javaproxyhook.hook;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Proxy;
 
-/**这个类用于4.x+ hook activityManager
+import com.tomes.javaproxyhook.hook.impl.IActivityManagerHandler;
+
+/**这个类用于4.x+ hook activityManagerService
  * @author Tomes
  *
  */
-public class HookAM {
+public class HookAMS {
 
 	public static void hook() throws Exception {
 		// 需要hook ActivityManagerNative类的gDefault:Singleton<IActivityManager>

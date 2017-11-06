@@ -1,7 +1,9 @@
-package com.tomes.javaproxyhook;
+package com.tomes.javaproxyhook.Activity;
 
 import android.app.Activity;
 import android.os.Bundle;
+
+import com.tomes.javaproxyhook.R;
 
 public class ThirdActivity extends Activity{
 

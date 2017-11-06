@@ -1,7 +1,9 @@
-package com.tomes.javaproxyhook;
+package com.tomes.javaproxyhook.hook.impl;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
+
+import com.tomes.javaproxyhook.Utils.LogUtils;
 
 public class IPackageManagerHandler implements InvocationHandler {
 

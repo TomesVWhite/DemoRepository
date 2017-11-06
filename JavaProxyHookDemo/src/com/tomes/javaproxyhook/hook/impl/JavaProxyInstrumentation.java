@@ -1,6 +1,8 @@
-package com.tomes.javaproxyhook;
+package com.tomes.javaproxyhook.hook.impl;
 
 import java.lang.reflect.Method;
+
+import com.tomes.javaproxyhook.Utils.LogUtils;
 
 import android.app.Activity;
 import android.app.Instrumentation;

@@ -1,4 +1,7 @@
-package com.tomes.javaproxyhook;
+package com.tomes.javaproxyhook.Activity;
+
+import com.tomes.javaproxyhook.R;
+import com.tomes.javaproxyhook.R.layout;
 
 import android.app.Activity;
 import android.os.Bundle;

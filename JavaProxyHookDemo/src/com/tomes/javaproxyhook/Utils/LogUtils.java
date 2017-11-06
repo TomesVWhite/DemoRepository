@@ -13,7 +13,7 @@
  * limitations under the License.
  */
 
-package com.tomes.javaproxyhook;
+package com.tomes.javaproxyhook.Utils;
 
 import android.util.Log;
 
