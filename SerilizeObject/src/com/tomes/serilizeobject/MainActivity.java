@@ -22,9 +22,21 @@ public class MainActivity extends Activity {
 		person.student.put("name", "小明");
 	}
 
-	public void to2(View v){
+	//使用序列化去传递参数
+	/*public void to2(View v){
 		Intent intent=new Intent(this,SecondActivity.class);
 		intent.putExtra("person", person);
+		startActivity(intent);
+	}*/
+	
+	//使用Parcelable去传递参数
+	public void to2(View v){
+		Intent intent=new Intent(this,SecondActivity.class);
+		PersonB personB=new PersonB();
+		personB.age=10;
+		personB.name="周周";
+		personB.student.put("sex", "男");
+		intent.putExtra("personB", personB);
 		startActivity(intent);
 	}
 }
