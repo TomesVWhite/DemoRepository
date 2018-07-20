@@ -1,0 +1,31 @@
+<resources>
+    <!-- 线高度 -->
+    <dimen name="global_line_size">1px</dimen>
+    <!-- 聊天评论线 -->
+    <!-- 圆角图片角度 -->
+    <dimen name="glide_round_angle">8px</dimen>
+
+    <!-- 用的比较多的margin -->
+
+    <!-- 列表线宽度 -->
+
+    <!-- 公用头部高度 -->
+
+    <dimen name="game_master_image_margin_left">25.5dp</dimen>
+    <dimen name="game_master_dialog_margin">20dp</dimen>
+    <dimen name="game_master_dialog_padding_left_right_bottom">15dp</dimen>
+    <dimen name="game_master_dialog_title_size">18sp</dimen>
+    <dimen name="game_master_dialog_content_margin_top">12dp</dimen>
+    <dimen name="game_master_dialog_message_line_space">7dp</dimen>
+    <dimen name="game_master_dialog_message_size">15sp</dimen>
+    <dimen name="game_master_dialog_btn_margin_top">20dp</dimen>
+    <dimen name="game_master_dialog_btn_margin_right">15dp</dimen>
+    <dimen name="game_master_dialog_padding_top">20dp</dimen>
+    <dimen name="game_master_dialog_bg_radius">8dp</dimen>
+    <dimen name="game_master_dialog_btn_corners_radius">50dp</dimen>
+    <dimen name="game_master_dialog_btn_stroke_width">0.5dp</dimen>
+    <dimen name="game_master_dialog_btn_width">0dp</dimen>
+    <dimen name="game_master_dialog_btn_height">40dp</dimen>
+    <dimen name="game_master_dialog_btn_text_size">16sp</dimen>
+
+</resources>

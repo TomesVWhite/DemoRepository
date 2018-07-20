@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/game_master_dialog_margin"
+        android:layout_marginRight="@dimen/game_master_dialog_margin"
+        android:background="@drawable/game_master_dialog_bg"
+        android:paddingBottom="@dimen/game_master_dialog_padding_left_right_bottom"
+        android:paddingLeft="@dimen/game_master_dialog_padding_left_right_bottom"
+        android:paddingRight="@dimen/game_master_dialog_padding_left_right_bottom"
+        android:paddingTop="@dimen/game_master_dialog_padding_top">
+
+        <TextView
+            android:id="@+id/game_master_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/game_master_dialog_title"
+            android:textSize="@dimen/game_master_dialog_title_size"
+            tools:text="str" />
+
+        <LinearLayout
+            android:id="@+id/game_master_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_master_dialog_title"
+            android:layout_marginTop="@dimen/game_master_dialog_content_margin_top">
+
+            <TextView
+                android:id="@+id/game_master_dialog_message"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="@dimen/game_master_dialog_message_line_space"
+                android:textColor="@color/game_master_dialog_message"
+                android:textSize="@dimen/game_master_dialog_message_size"
+                tools:text="str" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_master_dialog_content"
+            android:layout_marginTop="@dimen/game_master_dialog_btn_margin_top"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/game_master_dialog_cancel_btn"
+                style="@style/GameMasterDialogBtnStyle"
+                android:layout_marginEnd="@dimen/game_master_dialog_btn_margin_right"
+                android:layout_marginRight="@dimen/game_master_dialog_btn_margin_right"
+                android:background="@drawable/game_master_dialog_cancel_btn_selector"
+                android:textColor="@color/game_master_dialog_cancel_btn_text"
+                tools:text="str" />
+
+            <Button
+                android:id="@+id/game_master_dialog_define_btn"
+                style="@style/GameMasterDialogBtnStyle"
+                android:background="@drawable/game_master_dialog_confirm_btn_selector"
+                android:textColor="@color/white"
+                tools:text="str" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

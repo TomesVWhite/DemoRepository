@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/game_master_dialog_margin"
+        android:layout_marginRight="@dimen/game_master_dialog_margin"
+        android:background="@drawable/game_master_dialog_bg"
+        android:paddingBottom="@dimen/game_master_dialog_padding_left_right_bottom"
+        android:paddingLeft="@dimen/game_master_dialog_padding_left_right_bottom"
+        android:paddingRight="@dimen/game_master_dialog_padding_left_right_bottom"
+        android:paddingTop="@dimen/game_master_dialog_padding_top">
+
+        <TextView
+            android:id="@+id/game_master_dialog_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/game_master_dialog_title"
+            android:textSize="@dimen/game_master_dialog_title_size"
+            tools:text="title" />
+
+        <LinearLayout
+            android:id="@+id/game_master_dialog_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_master_dialog_title"
+            android:layout_marginTop="@dimen/game_master_dialog_content_margin_top">
+
+            <ProgressBar
+                android:id="@+id/progress_atk"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_height="10dp"
+                android:layout_weight="3"
+                android:indeterminateOnly="false"
+                android:max="100"
+                android:progressDrawable="@drawable/progressbar"
+                android:progress="30"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/game_master_dialog_content"
+            android:layout_marginTop="@dimen/game_master_dialog_btn_margin_top"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/game_master_dialog_cancel_btn"
+                style="@style/GameMasterDialogBtnStyle"
+                android:background="@drawable/game_master_dialog_cancel_btn_selector"
+                android:textColor="@color/game_master_dialog_cancel_btn_text"
+                tools:text="cancel" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

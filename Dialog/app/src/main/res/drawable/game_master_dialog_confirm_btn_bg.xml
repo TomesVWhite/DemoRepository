@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/game_master_dialog_btn_corners_radius"/>
+    <solid android:color="@color/game_master_dialog_confirm_btn"/>
+</shape>

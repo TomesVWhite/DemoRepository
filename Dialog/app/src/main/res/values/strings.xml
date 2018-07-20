@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Dialog</string>
+    <string name="upload_media_title">上传视频</string>
+    <string name="share_media_title">分享视频</string>
+    <string name="share_media_info">分享视频要先上传视频，是否要上传？</string>
+    <string name="upload_media_not_wifi_info">当前是2/3/4G网络，需消耗流量，是否要上传？</string>
+    <string name="upload_media_not_wifi_right_btn">上传</string>
+    <string name="upload_media_not_wifi_left_btn">取消</string>
+    <string name="interrupt_Uploading_title">上传视频中</string>
+    <string name="interrupt_Uploading_info">退出后视频停止上传，是否要退出？</string>
+    <string name="interrupt_Uploading_left_btn">取消</string>
+    <string name="interrupt_Uploading_right_btn">退出</string>
+    <string name="showdialog">showDialog</string>
+</resources>
