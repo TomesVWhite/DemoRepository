@@ -100,11 +100,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void dialogPositiveListener(View customView, DialogInterface dialogInterface, int which) {
                 dialogInterface.dismiss();
+                mGameMasterProgressDialog.closeDialog();
             }
 
             @Override
             public void dialogNegativeListener(View customView, DialogInterface dialogInterface, int which) {
-                Toast.makeText(MainActivity.this, "22222", Toast.LENGTH_SHORT).show();
             }
         }).showDialog();
     }
