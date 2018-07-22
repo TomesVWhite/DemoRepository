@@ -33,7 +33,7 @@
             android:layout_marginTop="@dimen/game_master_dialog_content_margin_top">
 
             <ProgressBar
-                android:id="@+id/progress_atk"
+                android:id="@+id/progress_upload"
                 style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="0dp"
                 android:layout_marginLeft="5dp"

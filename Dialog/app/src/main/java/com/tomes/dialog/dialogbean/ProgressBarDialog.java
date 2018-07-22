@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewGroup.LayoutParams;
 import android.widget.Button;
 import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -32,7 +33,7 @@ public class ProgressBarDialog extends Dialog {
         private View contentView;
         private String negativeButtonText;
         private OnClickListener negativeButtonClickListener;
-
+        private ProgressBar progressBar;
         private ProgressBarDialog dialog;
 
         public Builder(Context context) {
@@ -40,6 +41,9 @@ public class ProgressBarDialog extends Dialog {
         }
 
 
+        public void refreshProgress(int progress){
+            progressBar.setProgress(progress);
+        }
         /**
          * 设置对话框标题
          *
@@ -94,7 +98,7 @@ public class ProgressBarDialog extends Dialog {
             } else {
                 ((TextView) layout.findViewById(R.id.game_master_dialog_title)).setText(title);
             }
-
+            progressBar=(ProgressBar)layout.findViewById(R.id.progress_upload);
             //设置取消意图的按钮
             if (negativeButtonText != null) {
                 ((Button) layout.findViewById(R.id.game_master_dialog_cancel_btn)).setText(negativeButtonText);

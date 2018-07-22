@@ -51,6 +51,9 @@ public class GameMasterProgressDialog implements DialogInterface.OnDismissListen
         this.mDialogView = dialogView;
     }
 
+    public void refreshProgress(int progress){
+        mDialog.refreshProgress(progress);
+    }
     /**
      * 显示对话框
      */
